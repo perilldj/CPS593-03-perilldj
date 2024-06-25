@@ -1,0 +1,19 @@
+.App {
+  background: rgb(177,176,187);
+  background: linear-gradient(0deg, rgba(177,176,187,1) 0%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%); 
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 30px
+}
+
+form {
+  max-width: 25vh;
+}
+
+h1 {
+  color:aliceblue;
+}
+
+label {
+  color:aliceblue;
+}
