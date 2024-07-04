@@ -12,7 +12,7 @@ router
         }
     })
 
-    .get('/getPostContent', async (req, res) => {
+    .post('/getPostContent', async (req, res) => {
         try{
             const post = await Post.getPostContent(req.body.id);
             res.send(post);

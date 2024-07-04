@@ -19,8 +19,9 @@ async function addPost(id, title, content) {
 }
 
 async function getPostContent(id) {
-    const post = await getPost(id);
+    const post = await getAllPosts(id);
     if(!post) throw Error ("Post not found");
+    console.log(id)
     return post;
 }
 
@@ -35,6 +36,10 @@ async function deletePost(id) {
 
 async function getPost(id) {
     return await Post.findOne({"_id": id});
+}
+
+async function getAllPosts(id) {
+    return await Post.find({userid: id});
 }
 
 module.exports = {addPost, getPostContent, updatePost, deletePost}; 
